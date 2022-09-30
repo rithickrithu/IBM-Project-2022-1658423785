@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 import ibm_db
 from markupsafe import escape
 
-conn=imb_db.connect("")
+conn=ibm_db.connect("")
 
 app=Flask(__name__)
 
@@ -37,7 +37,7 @@ def register():
         email_reg=request.form['email']
 
         sqlr="SELECT * from user_login WHERE username=?"
-        stmt=imb_db.prepare(conn,sqlr)
+        stmt=ibm_db.prepare(conn,sqlr)
         ibm_db.bind_param(stmt,1,username_reg)
         ibm_db.execute(stmt)
         account=ibm_db.fetch_assoc(stmt)
