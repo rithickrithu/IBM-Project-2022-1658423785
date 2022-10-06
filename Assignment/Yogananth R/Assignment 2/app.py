@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 import ibm_db
 from markupsafe import escape
 
-conn=ibm_db.connect("")
+conn=ibm_db.connect("DATABASE=bludb;HOSTNAME=824dfd4d-99de-440d-9991-629c01b3832d.bs2io90l08kqb1od8lcg.databases.appdomain.cloud;PORT=30119;SECURITY=SSL;SSLServerCertificate=DigiCertGlobalRootCA.crt;UID=bqw81992;PWD=fEqs8mKciKoCvTJF;",'','')
 
 app=Flask(__name__)
 
@@ -13,13 +13,12 @@ def login():
     if request.method == 'POST' and 'username' in request.form and 'password' in request.form:
         username = request.form['username']
         password = request.form['password']
-
         sqll= f"SELECT username, password from user_login where username= '{escape(username)}'"
         stmt=ibm_db.exec_immediate(conn,sqll)
         dictionary=ibm_db.fetch_assoc(stmt)
         while dictionary != False:
-            db_username=dictionary["username"]
-            db_password=dictionary["password"]
+            db_username=dictionary['USERNAME']
+            db_password=dictionary['PASSWORD']
             dictionary=ibm_db.fetch_assoc(stmt)
 
         
