@@ -1,11 +1,13 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, session
 import ibm_db
 from markupsafe import escape
+from os import urandom
+
 
 conn=ibm_db.connect("DATABASE=;HOSTNAME=;PORT=;SECURITY=;SSLServerCertificate=;UID=;PWD=;",'','')
 
 app=Flask(__name__)
-
+app.secret_key=urandom(24)
 
 @app.route("/")
 @app.route("/login",methods=['GET','POST'])
@@ -16,16 +18,23 @@ def login():
         sqll= f"SELECT username, password from user_login where username= '{escape(username)}'"
         stmt=ibm_db.exec_immediate(conn,sqll)
         dictionary=ibm_db.fetch_assoc(stmt)
-        while dictionary != False:
-            db_username=dictionary['USERNAME']
-            db_password=dictionary['PASSWORD']
-            dictionary=ibm_db.fetch_assoc(stmt)
+        if dictionary:
+            while dictionary != False:
+                db_username=dictionary['USERNAME']
+                db_password=dictionary['PASSWORD']
+                dictionary=ibm_db.fetch_assoc(stmt)
 
-        
-        if username==db_username and password==db_password:
-            return render_template("index.html",msg=username)
+            if username==db_username and password==db_password:
+                session['login_status']=True
+                session['username']=username
+                return render_template("index.html",msg=username)
+            else:
+                return render_template("login.html",msg="Login Invalid")
         else:
             return render_template("login.html",msg="Login Invalid")
+
+    
+    
     return render_template("login.html")
 
 @app.route("/register",methods=['POST','GET'])
@@ -52,3 +61,12 @@ def register():
             ibm_db.execute(prep_stmt)
         return render_template("login.html",msg="Account Created. Login Now!!")
     return render_template("register.html")
+
+
+@app.route('/logout')
+def logout():
+    session.pop('login_status',None)
+    session.pop('username',None)
+    username=""
+    passsword=""
+    return redirect(url_for('login'))
