@@ -6,7 +6,7 @@ Team Leader -
 - [Naveen M S](https://github.com/IBM-EPBL/IBM-Project-2022-1658423785/tree/master/Assignment/Naveen%20MS)
 
 Team Members -
-- Ram Bharath V <br>
-- Rithick K V <br>
-- Vignesh E <br>
-- Yogananth R
+- [Ram Bharath V](https://github.com/IBM-EPBL/IBM-Project-2022-1658423785/tree/master/Assignment/Ram_Bharath_V) <br>
+- [Rithick K V](https://github.com/IBM-EPBL/IBM-Project-2022-1658423785/tree/master/Assignment/Rithick%20K%20V) <br>
+- [Vignesh E](https://github.com/IBM-EPBL/IBM-Project-2022-1658423785/tree/master/Assignment/Vignesh%20E) <br>
+- [Yogananth R](https://github.com/IBM-EPBL/IBM-Project-2022-1658423785/tree/master/Assignment/Yogananth%20R)
