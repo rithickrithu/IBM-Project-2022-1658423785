@@ -1,1 +1,1 @@
-[Live] https://rb-ibm.s3.jp-tok.cloud-object-storage.appdomain.cloud/index.html
+[Live Site with Images and CSS stored in Object Storage](https://rb-ibm.s3.jp-tok.cloud-object-storage.appdomain.cloud/index.html)
