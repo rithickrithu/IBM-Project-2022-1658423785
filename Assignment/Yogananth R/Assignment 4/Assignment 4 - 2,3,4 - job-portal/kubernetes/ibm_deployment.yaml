@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: job-portal-container
-          # image: jp.icr.io/ns-b4/k8s-job-tracker
+          image: jp.icr.io/job-portal/job-portal
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
