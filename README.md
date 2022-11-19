@@ -11,5 +11,7 @@ Team Members -
 - [Vignesh E](https://github.com/IBM-EPBL/IBM-Project-2022-1658423785/tree/master/Assignment/Vignesh%20E) <br>
 - [Yogananth R](https://github.com/IBM-EPBL/IBM-Project-2022-1658423785/tree/master/Assignment/Yogananth%20R)
 
-News Tracker Application Demo Link - [https://youtu.be/0659mb8LGTg](https://youtu.be/0659mb8LGTg)
-News Tracker Application Live Link - [http://169.51.207.49:31362/](http://169.51.207.49:31362/)
+---
+
+- News Tracker Application Demo Link - [https://youtu.be/0659mb8LGTg](https://youtu.be/0659mb8LGTg)
+- News Tracker Application Live Link - [http://169.51.207.49:31362/](http://169.51.207.49:31362/)
