@@ -10,3 +10,5 @@ Team Members -
 - [Rithick K V](https://github.com/IBM-EPBL/IBM-Project-2022-1658423785/tree/master/Assignment/Rithick%20K%20V) <br>
 - [Vignesh E](https://github.com/IBM-EPBL/IBM-Project-2022-1658423785/tree/master/Assignment/Vignesh%20E) <br>
 - [Yogananth R](https://github.com/IBM-EPBL/IBM-Project-2022-1658423785/tree/master/Assignment/Yogananth%20R)
+
+News Tracker Application Demo Link - [https://youtu.be/0659mb8LGTg](https://youtu.be/0659mb8LGTg)
