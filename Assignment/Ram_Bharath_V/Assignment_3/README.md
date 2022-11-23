@@ -1,2 +1,4 @@
 [Live Site with Images and CSS stored in Object Storage](https://rb-ibm.s3.jp-tok.cloud-object-storage.appdomain.cloud/index.html)
 [Hospital Branch Chatbot](https://web-chat.global.assistant.watson.appdomain.cloud/preview.html?backgroundImageURL=https%3A%2F%2Fau-syd.assistant.watson.cloud.ibm.com%2Fpublic%2Fimages%2Fupx-bbbb4bb2-0720-47f8-a7a0-078ecdfa14cd%3A%3A4b1104da-febb-4c90-868b-358cb743fea6&integrationID=a2282826-ada4-4aa7-9e79-4aa262d4a0bb&region=au-syd&serviceInstanceID=bbbb4bb2-0720-47f8-a7a0-078ecdfa14cd)
+
+[Assignment - 3.5 Newsie](https://web-chat.global.assistant.watson.appdomain.cloud/preview.html?backgroundImageURL=https%3A%2F%2Fau-syd.assistant.watson.cloud.ibm.com%2Fpublic%2Fimages%2Fupx-bbbb4bb2-0720-47f8-a7a0-078ecdfa14cd%3A%3Aa999447a-ab16-4729-88b7-d200d8adf260&integrationID=ae605512-eac7-4938-b718-ad3c2a7b76a6&region=au-syd&serviceInstanceID=bbbb4bb2-0720-47f8-a7a0-078ecdfa14cd)
