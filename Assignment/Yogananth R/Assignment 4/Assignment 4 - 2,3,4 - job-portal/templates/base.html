@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+    <style>
+        .message {
+            padding: 10px;
+            margin: 5px;
+            background-color: #ff9b9b
+        }
+        nav a {
+            color: #8d35ff;
+            font-size: 25px;
+            margin-left: 50px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .alert {
+            padding: 20px;
+            margin: 5px;
+            color: #ff2b6a;
+            background-color: #7cfbff;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('index') }}">Job Portal</a>
+        <a href="{{ url_for('create') }}">Job Apply</a>
+        <!-- <a href="#">About</a> -->
+    </nav>
+    <hr>
+    <div class="content">
+        {% for message in get_flashed_messages() %}
+            <div class="alert">{{ message }}</div>
+        {% endfor %}
+        {% block content %} {% endblock %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-world
+
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: hello-world
+  template:
+    metadata:
+      labels:
+        app: hello-world
+
+    spec:
+      containers:
+        - name: hello-world-container
+          image: jp.icr.io/ibm_assignment/hello-world-rb@sha256:90610a481b9482657038d3f4772ac1363e4e993cb72ca1a51b4f187213c1ae98
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
+              protocol: TCP

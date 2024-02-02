@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "e14f44e3-eb38-40a5-8e1b-e3b80b08dc40", // The ID of this integration.
+        region: "jp-tok", // The region your integration is hosted in.
+        serviceInstanceID: "5bd5c6dd-ef66-46af-a0d7-e3198a9fee7f", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
+    <style>
+      body{
+        background-color: beige;
+        overflow: hidden;
+      }
+.border{
+    padding: 50px 80px;
+    width: 390px;
+    border-radius:10cm;
+    height: 350px;
+    border: 3px solid #0e1214;
+    border-radius: 30px;
+    background-color: #e96969;
+    margin: 30px auto;
+}
+    </style>
+  </head>
+   <body>
+    <div class="border">
+    <h1>welcome to the site</h1>
+    <h2>You can book the appoinment using the chatbot</h2>
+  </div>
+   </body>
+</html>

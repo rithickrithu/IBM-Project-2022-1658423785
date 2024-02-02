@@ -1,0 +1,3 @@
+Hello World Docker image on IBM Container Registry: [jp.icr.io/ibm_assignment/hello-world-rb@sha256:90610a481b9482657038d3f4772ac1363e4e993cb72ca1a51b4f187213c1ae98](https://jp.icr.io/ibm_assignment/hello-world-rb@sha256:90610a481b9482657038d3f4772ac1363e4e993cb72ca1a51b4f187213c1ae98)
+
+The app was deployed in Kuberenetes and its public IP is [http://169.51.207.49:32559/](http://169.51.207.49:32559/)
